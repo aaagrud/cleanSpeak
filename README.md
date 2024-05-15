@@ -27,6 +27,9 @@ This project is a simple web application built with Node.js, Express.js, and EJS
 - Axios
 - Purgomalum API
 
+## Screenshots
+![image](https://github.com/aaagrud/profanityChecker/assets/118443621/85f521aa-9b11-4de5-a3bf-bf7736ddb264)
+![image](https://github.com/aaagrud/profanityChecker/assets/118443621/50cef1b2-8b70-4473-87bf-37e885658150)
 
 This small project is by me, Durga. Feel free to contribute or report issues.
 
