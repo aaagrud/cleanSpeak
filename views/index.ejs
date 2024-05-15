@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+    <title>profanityChecker</title>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen">
+    <div class="card bg-gray-800 border border-gray-500 p-6 rounded-lg">
+        <form id="formy" method="POST">
+            <div class = "flex items-center justify-center">
+                <input class="rounded border border-black p-2" type="text" name="content" placeholder="enter your text here">
+            </div>
+            <div class="buttons flex items-center justify-center mt-4">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit" name="action" formaction="/" value="check">Check For Profanity</button>
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 ml-2 rounded" type="submit" formaction="/" name="action" value="blank">Blank Out Profanity</button>
+            </div>
+            <% if (locals.message) { %>
+                <div class="output mt-4 text-white flex items-center justify-center">
+                    <p><%= message %></p>
+                </div>
+            <% } %>
+        </form>
+    </div>
+</body>
+</html>
